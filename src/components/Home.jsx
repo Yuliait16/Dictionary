@@ -7,12 +7,8 @@ export let word;
 
 const Home = () => {
     const dispatch = useDispatch()
-    const value = useSelector(state => state.reducer.value);
-    const wordStore = useSelector(state => state.reducer.word);
-    /* удалить */
-    const store = useSelector(state => state.reducer);
     
-    function test(e) {
+    function getInfo(e) {
         e.preventDefault();
         word = document.querySelector(".home__input").value;
         dispatch(setWord(word));
@@ -23,11 +19,13 @@ const Home = () => {
             <h1 className="home__title">Dictionary</h1>
             <div className="home__content">
                 <input className="home__input" type="text" name="word" placeholder="Word to search" />
-                <button className="home__button" onClick={(e) => {test(e)}}><NavLink to={`/result`}><SearchIcon/></NavLink></button>
+                <button className="home__button" onClick={(e) => {getInfo(e)}}><NavLink to={`/result`}><SearchIcon/></NavLink></button>
              </div>
         </div>
     )
 };
 
 export default Home;
+
+
 

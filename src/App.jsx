@@ -25,14 +25,3 @@ const App = () => {
 
 export default App;
 
-
-
-{/* <Router>
-    <div>
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/result" component={Result} />
-            <Redirect to="/redirect" />
-        </Switch>
-    </div>
-</Router>  */}
