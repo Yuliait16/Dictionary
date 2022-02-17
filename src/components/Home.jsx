@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setWord } from "../store/dictionaryReducer";
 import { NavLink } from "react-router-dom";
+import SearchIcon from '@mui/icons-material/Search';
 
 export let word;
 
@@ -22,7 +23,7 @@ const Home = () => {
             <h1 className="home__title">Dictionary</h1>
             <div className="home__content">
                 <input className="home__input" type="text" name="word" placeholder="Word to search" />
-                <button className="home__button" onClick={(e) => {test(e)}}><NavLink to={`/result`}>Search</NavLink></button>
+                <button className="home__button" onClick={(e) => {test(e)}}><NavLink to={`/result`}><SearchIcon/></NavLink></button>
              </div>
         </div>
     )

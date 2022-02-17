@@ -8,15 +8,17 @@ import { store } from './store';
 const App = () => {
     return (
         <div className="wraper">
-            <Provider store={store}>
-                <Router>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/result" component={Result} />
-                        <Redirect to="/redirect" />
-                    </Switch>
-                </Router>
-            </Provider>
+            <div className="container">
+                <Provider store={store}>
+                    <Router>
+                        <Switch>
+                            <Route exact path="/" component={Home} />
+                            <Route exact path="/result" component={Result} />
+                            <Redirect to="/redirect" />
+                        </Switch>
+                    </Router>
+                </Provider>
+            </div>
         </div>
     );
 };
