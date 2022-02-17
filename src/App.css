@@ -164,6 +164,7 @@ body {
 }
 .result__error h2 {
     font-size: 32px;
+    color: rgb(162, 162, 162);
 }
 .result__error .msg {
     top: -190px;

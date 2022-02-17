@@ -53,10 +53,10 @@ const Result = () => {
                                 <div className="container-floud">
                                     <div className="col-xs-12 ground-color text-center">
                                         <div className="container-error-404">
-                                            <div className="clip"><div class="shadow"><span class="digit thirdDigit">4</span></div></div>
-                                            <div className="clip"><div class="shadow"><span class="digit secondDigit">0</span></div></div>
-                                            <div className="clip"><div class="shadow"><span class="digit firstDigit">4</span></div></div>
-                                            <div className="msg">OH!<span class="triangle"></span></div>
+                                            <div class="clip"><div class="shadow"><span class="digit thirdDigit">4</span></div></div>
+                                            <div class="clip"><div class="shadow"><span class="digit secondDigit">0</span></div></div>
+                                            <div class="clip"><div class="shadow"><span class="digit firstDigit">4</span></div></div>
+                                            <div class="msg">OH!<span class="triangle"></span></div>
                                         </div>
                                         <h2 className="h1">Sorry! Word is not found</h2>
                                     </div>
